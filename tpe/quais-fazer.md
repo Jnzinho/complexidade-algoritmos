@@ -2,7 +2,7 @@
 - [x] 1203 – Pontes de São Petersburgo
 - [x] 1224 – Cartões
 - [x] 1409 – Zak Galou
-- [ ] 1552 – Resgate em Queda Livre
+- [x] 1552 – Resgate em Queda Livre
 - [ ] 1764 – Itinerário do Papai Noel
 - [ ] 1931 – Mania de Par
 - [ ] 1952 – Cavalo no Xadrez 3D
