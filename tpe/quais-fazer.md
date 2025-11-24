@@ -3,10 +3,10 @@
 - [x] 1224 – Cartões
 - [x] 1409 – Zak Galou
 - [x] 1552 – Resgate em Queda Livre
-- [ ] 1764 – Itinerário do Papai Noel
-- [ ] 1931 – Mania de Par
-- [ ] 1952 – Cavalo no Xadrez 3D
-- [ ] 2635 – Navegador Web
+- [x] 1764 – Itinerário do Papai Noel
+- [x] 1931 – Mania de Par
+- [x] 1952 – Cavalo no Xadrez 3D
+- [x] 2635 – Navegador Web
 - [ ] 1076 – Desenhando Labirintos
 - [ ] 2089 – Lanchonete
 - [ ] 1539 – Empresa de Telecom
