@@ -1,7 +1,7 @@
 - [x] 1021 – Notas e Moedas
 - [x] 1203 – Pontes de São Petersburgo
 - [x] 1224 – Cartões
-- [ ] 1409 – Zak Galou
+- [x] 1409 – Zak Galou
 - [ ] 1552 – Resgate em Queda Livre
 - [ ] 1764 – Itinerário do Papai Noel
 - [ ] 1931 – Mania de Par
