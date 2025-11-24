@@ -7,6 +7,6 @@
 - [x] 1931 – Mania de Par
 - [x] 1952 – Cavalo no Xadrez 3D
 - [x] 2635 – Navegador Web
-- [ ] 1076 – Desenhando Labirintos
-- [ ] 2089 – Lanchonete
-- [ ] 1539 – Empresa de Telecom
+- [x] 1076 – Desenhando Labirintos
+- [x] 2089 – Lanchonete
+- [x] 1539 – Empresa de Telecom
