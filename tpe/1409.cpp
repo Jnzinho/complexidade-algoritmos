@@ -1,3 +1,25 @@
+// Zak Galou
+// Complexidade: O(M * HP_MAX + (N + G) * log N)
+//
+// EXPLICAÇÃO:
+// Este problema combina duas técnicas: Programação Dinâmica e Dijkstra.
+//
+// PARTE 1 - DP para calcular custo mínimo de mana para matar monstros:
+// - minMana[d] = custo mínimo de mana para causar exatamente d de dano
+// - Para cada dano d, testamos todas as M magias disponíveis
+// - Se uma magia causa 'damage' de dano com custo 'cost', então:
+//   minMana[d] = min(minMana[d], minMana[d - damage] + cost)
+// - Isso é similar ao problema da mochila ilimitada (cada magia pode ser usada várias vezes)
+// - Complexidade: O(M * HP_MAX), onde HP_MAX = 1001
+//
+// PARTE 2 - Dijkstra para encontrar caminho de menor custo:
+// - Cada sala tem um custo = soma das manas para matar todos os monstros nela
+// - Usamos Dijkstra para encontrar o caminho da sala 1 até a sala N
+// - O custo de entrar em uma sala é o custo de limpar ela
+// - Complexidade: O((N + G) * log N) usando priority_queue
+//
+// A combinação dessas técnicas permite resolver o problema de forma eficiente.
+
 #include <iostream>
 #include <vector>
 #include <queue>

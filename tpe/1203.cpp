@@ -1,3 +1,25 @@
+// Componentes Biconectados (Pontes de Königsberg)
+// Complexidade: O(R * K) por caso de teste
+//
+// EXPLICAÇÃO:
+// Este problema é uma variação do problema das Pontes de Königsberg.
+// Queremos saber se é possível selecionar um subconjunto de regiões tal que
+// o número total de pontes incidentes seja exatamente K.
+//
+// Usamos Programação Dinâmica com memoização:
+// - DP(regiao, pontes) = é possível, a partir da 'regiao', atingir exatamente K pontes?
+// - Para cada região, temos duas escolhas:
+//   1. NÃO incluir a região: DP(regiao + 1, pontes)
+//   2. Incluir a região: DP(regiao + 1, pontes + graus[regiao])
+// - Caso base: se pontes == K, retorna verdadeiro; se pontes > K, retorna falso
+//
+// Por que a tabela tem dimensão [101][4951]?
+// - Temos no máximo 100 regiões
+// - Cada ponte conecta 2 regiões, então a soma máxima de graus é 2*K
+// - Com K ≤ 2475 (máximo de pontes), a soma máxima é 4950
+//
+// A memoização evita recalcular estados já visitados, garantindo O(R * K).
+
 #include <iostream>
 #include <cstring>
 
