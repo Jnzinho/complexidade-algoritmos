@@ -1,21 +1,5 @@
 // Empresa de Telecom
 // Complexidade: O(N³ + C) por caso de teste
-//
-// EXPLICAÇÃO:
-// Este é um problema de caminho mínimo em um grafo direcionado ponderado.
-// Cada antena é um nó, e existe uma aresta direcionada de i para j se a
-// distância entre elas é menor ou igual ao raio de alcance da antena i.
-// O peso da aresta é a distância Euclidiana entre as antenas.
-//
-// Importante: o grafo é DIRECIONADO! A antena A pode alcançar B (se dist ≤ R_A),
-// mas B pode não alcançar A (se dist > R_B).
-//
-// Usamos Floyd-Warshall para calcular todos os caminhos mínimos:
-// - Inicializamos dist[i][j] com a distância se houver conexão direta, INF caso contrário
-// - Para cada nó intermediário k, atualizamos dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
-//
-// A saída deve ser TRUNCADA (não arredondada) para inteiro.
-// Se não houver caminho, imprimimos -1.
 
 #include <cstdio>
 #include <cmath>

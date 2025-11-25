@@ -1,16 +1,5 @@
 // O Cavalo no Xadrez 3D
 // Complexidade: O(N * M * L)
-//
-// EXPLICAÇÃO:
-// Este é um problema de caminho mínimo em um espaço 3D.
-// O cavalo pode pular de (i1, j1, k1) para (i2, j2, k2) se {|di|, |dj|, |dk|} = {0, 1, 2}.
-// Isso significa que uma coordenada muda 0, uma muda 1, e uma muda 2.
-//
-// Usamos BFS (busca em largura) pois todas as arestas têm peso 1.
-// - Geramos os 24 movimentos válidos (permutações de {0, 1, 2} com sinais)
-// - BFS a partir da posição inicial até encontrar a posição final
-//
-// Complexidade: O(N * M * L) pois cada posição é visitada no máximo uma vez.
 
 #include <cstdio>
 #include <queue>

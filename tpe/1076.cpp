@@ -1,21 +1,5 @@
 // Desenhando Labirintos
-// Complexidade: O(V² + 2^k * k) onde k é o número de vértices de grau ímpar
-//
-// EXPLICAÇÃO:
-// Este é o Problema do Carteiro Chinês (Chinese Postman Problem).
-// Queremos percorrer todas as arestas pelo menos uma vez, retornando ao início.
-//
-// Se todos os vértices têm grau par, existe um circuito Euleriano e a resposta
-// é simplesmente o número de arestas.
-//
-// Se existem vértices de grau ímpar (sempre em número par), precisamos
-// "duplicar" algumas arestas para tornar todos os graus pares.
-// O custo mínimo é encontrado fazendo um emparelhamento perfeito de peso mínimo
-// entre os vértices de grau ímpar, usando as distâncias mais curtas entre eles.
-//
-// Usamos BFS para calcular distâncias e DP iterativo com bitmask para o emparelhamento.
-//
-// Resposta = número de arestas + custo do emparelhamento
+// Complexidade: O(V² + 2^k * k)
 
 #include <cstdio>
 #include <cstring>

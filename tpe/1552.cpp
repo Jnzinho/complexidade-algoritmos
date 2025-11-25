@@ -1,21 +1,5 @@
 // Resgate em Queda Livre
 // Complexidade: O(n²) por caso de teste
-//
-// EXPLICAÇÃO:
-// Este problema é uma aplicação clássica de Árvore Geradora Mínima (MST).
-// O objetivo é conectar todas as pessoas usando o mínimo de teia possível.
-//
-// Usamos o algoritmo de Prim:
-// 1. Começamos com uma pessoa na árvore (a primeira)
-// 2. Repetidamente, adicionamos a pessoa mais próxima que ainda não está conectada
-// 3. Para cada pessoa adicionada, atualizamos as distâncias mínimas das outras
-// 4. O loop externo roda n vezes, e o interno também n vezes = O(n²)
-//
-// A escolha do Prim (em vez de Kruskal) é eficiente aqui porque o grafo é denso
-// (todas as pessoas podem se conectar com todas), então temos O(n²) arestas.
-// Com Kruskal precisaríamos ordenar O(n²) arestas = O(n² log n), que é pior.
-//
-// As coordenadas são em centímetros, então dividimos por 100 para obter metros.
 
 #include <stdio.h>
 #include <math.h>

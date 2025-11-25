@@ -1,20 +1,5 @@
 // Navegador Web
-// Complexidade: O((N + Q) * L) onde L é o comprimento máximo das strings (100)
-//
-// EXPLICAÇÃO:
-// Este problema pede para implementar um sistema de autocomplete.
-// Para cada consulta (prefixo), precisamos contar quantas palavras têm esse prefixo
-// e encontrar o comprimento da maior delas.
-//
-// Usamos uma Trie (árvore de prefixos):
-// - Cada nó armazena: count (palavras com este prefixo) e maxLen (maior comprimento)
-// - Inserção: percorremos a palavra caractere a caractere, incrementando count
-//   e atualizando maxLen em cada nó visitado
-// - Consulta: navegamos até o nó correspondente ao prefixo e retornamos count e maxLen
-//
-// Complexidade:
-// - Construção da Trie: O(N * L)
-// - Consultas: O(Q * L)
+// Complexidade: O((N + Q) * L)
 
 #include <cstdio>
 #include <cstring>

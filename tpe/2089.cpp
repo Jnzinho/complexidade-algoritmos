@@ -1,18 +1,5 @@
 // Lanchonete
 // Complexidade: O(N * V) por caso de teste
-//
-// EXPLICAÇÃO:
-// Este é o problema clássico de Soma de Subconjuntos (Subset Sum).
-// Precisamos verificar se existe um subconjunto de moedas cuja soma é exatamente V.
-//
-// Usamos Programação Dinâmica:
-// - dp[i] = true se é possível formar a soma i com algum subconjunto de moedas
-// - Inicialmente, dp[0] = true (soma 0 sem usar moedas)
-// - Para cada moeda de valor c, atualizamos dp[j] = dp[j] || dp[j-c]
-// - Percorremos de trás para frente para não usar a mesma moeda duas vezes
-//   (cada moeda só pode ser usada uma vez, diferente do problema do troco)
-//
-// Resposta: dp[V] indica se é possível pagar exatamente o valor do lanche
 
 #include <cstdio>
 #include <cstring>

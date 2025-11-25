@@ -1,20 +1,5 @@
 // Mania de Par
 // Complexidade: O((C + V) log C)
-//
-// EXPLICAÇÃO:
-// Patrícia precisa ir da cidade 1 à cidade C pagando um número PAR de pedágios.
-// Este é um problema de caminho mínimo com restrição de paridade.
-//
-// Usamos Dijkstra com estados expandidos:
-// - Estado: (cidade, paridade) onde paridade é 0 (par) ou 1 (ímpar)
-// - dist[cidade][paridade] = custo mínimo para chegar com essa paridade de arestas
-//
-// Transições:
-// - Cada aresta muda a paridade: de (u, p) para (v, 1-p) com custo w
-// - Começamos em dist[1][0] = 0 (cidade 1 com 0 pedágios = par)
-//
-// Resposta: dist[C][0] (chegar em C com número par de pedágios)
-// Se não for possível, retornamos -1.
 
 #include <cstdio>
 #include <vector>

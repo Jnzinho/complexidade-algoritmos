@@ -1,22 +1,5 @@
 // Itinerário do Papai Noel
 // Complexidade: O(N log N)
-//
-// EXPLICAÇÃO:
-// Este problema é uma aplicação clássica de Árvore Geradora Mínima (MST).
-// O Papai Noel precisa criar um mapa conectando todas as cidades com a menor
-// soma total de rotas possível, permitindo chegar em qualquer cidade.
-//
-// Usamos o algoritmo de Kruskal com Union-Find (DSU):
-// 1. Ordenamos todas as arestas (rotas) por peso (distância) crescente
-// 2. Para cada aresta, verificamos se ela conecta dois componentes diferentes
-// 3. Se conectar, adicionamos ao MST e unimos os componentes
-// 4. Paramos quando tivermos M-1 arestas (árvore completa)
-//
-// Union-Find com compressão de caminho e união por rank garante operações
-// quase O(1) (amortizado). A ordenação domina: O(N log N).
-//
-// A escolha do Kruskal é adequada aqui pois o grafo pode ser esparso
-// (N < 50000 arestas para M < 40000 vértices).
 
 #include <iostream>
 #include <vector>

@@ -1,24 +1,5 @@
 # Notas e Moedas
 # Complexidade: O(1) - tempo constante
-#
-# EXPLICAÇÃO:
-# Este é um problema clássico de algoritmo guloso (greedy).
-# O objetivo é decompor um valor monetário no menor número de notas e moedas.
-#
-# A estratégia gulosa funciona aqui porque o sistema monetário brasileiro é "canônico":
-# cada denominação é pelo menos o dobro da anterior, garantindo que escolher
-# a maior denominação possível sempre leva à solução ótima.
-#
-# Algoritmo:
-# 1. Convertemos o valor para centavos (evita erros de ponto flutuante)
-# 2. Para cada denominação (da maior para menor):
-#    - Calculamos quantas cabem no valor restante (divisão inteira)
-#    - Subtraímos do valor (resto da divisão)
-# 3. O número de operações é fixo (6 notas + 6 moedas = 12 iterações)
-#
-# Por que converter para centavos?
-# Operações com float podem gerar erros como 0.1 + 0.2 = 0.30000000000000004
-# Trabalhando com inteiros, evitamos esses problemas de precisão.
 
 valor = float(input())
 
