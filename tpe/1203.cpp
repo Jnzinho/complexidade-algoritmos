@@ -1,4 +1,4 @@
-// Componentes Biconectados (Pontes de Königsberg)
+// Pontes de São Petersburgo
 // Complexidade: O(R * K) por caso de teste
 //
 // EXPLICAÇÃO:

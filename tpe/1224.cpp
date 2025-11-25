@@ -1,4 +1,4 @@
-// Jogo de Cartas (Game Theory - Minimax)
+// Cartões
 // Complexidade: O(n²) por caso de teste
 //
 // EXPLICAÇÃO:
